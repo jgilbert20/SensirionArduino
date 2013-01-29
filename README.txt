@@ -4,6 +4,7 @@ temperature and humidity sensors.
 Created by Markus Schatzl, November 28, 2008
 Revised (v1.1) by Carl Jackson, August 4, 2010
 Rewritten (v2.0) by Carl Jackson, December 8, 2010
+Revised (v2.0.1) by Jeremy Gilbert, Jan 25, 2013 for Arduino 1.0        
 
 Revision History
 
@@ -27,6 +28,7 @@ Revision History
       improved error reporting.  Added sensor status register read function
       and expanded status register write function to cover all setable bits.
 
+2.0.1 - Added support for Arduino 1.0
 
 Usage Information
 

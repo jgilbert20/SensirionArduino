@@ -7,6 +7,8 @@
 /*  Revised (v1.1) by Carl Jackson, August 4, 2010                            */
 /*  Rewritten (v2.0) by Carl Jackson, December 10, 2010                       */
 /*    See README.txt file for details                                         */
+/*                                                                            */
+/* Revised (v2.0.1) by Jeremy Gilbert, Jan 25, 2013 for Arduino 1.0           */
 /* ========================================================================== */
 
 
@@ -20,9 +22,15 @@ extern "C" {
   #include <stdint.h>
   #include <math.h>
 
-  // Wiring Core Includes
-  #include "WConstants.h"
 }
+
+#if ARDUINO >= 100
+    #include "Arduino.h"   
+#else
+extern "C" {
+    #include "WConstants.h"
+}
+#endif
 
 #include "Sensirion.h"
 
